@@ -34,6 +34,10 @@ public class CustomerController {
 	@RequestMapping("/processForm")
 	public String processForm(@Valid @ModelAttribute("customer")Customer theCustomer,BindingResult theBindingResult) {
 		System.out.println("Last Name :   |"+theCustomer.getLastName()+"|");
+		System.out.println("Last Name :   |"+theCustomer.getPostalCode()+"|");
+		System.out.println("Binding result :"+theBindingResult);
+		// here we already have perform validation for lastName, will
+		// work for our freePasses as well.
 		if(theBindingResult.hasErrors())
 		{
 			return "customer-form";

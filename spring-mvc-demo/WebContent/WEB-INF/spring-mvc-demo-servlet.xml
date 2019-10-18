@@ -25,7 +25,12 @@
 		<!-- we need to create this directory, as it is not present by default -->
 		<property name="suffix" value=".jsp" />
 	</bean>
-
+<!-- load custom message resources. class name must be exactly this -->
+<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+ <!-- give location to the property file -->
+ <property name="basenames" value="resources/messages"/>
+ <!-- loads: resources/messages.properties -->
+</bean>
 </beans>
 
 
