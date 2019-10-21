@@ -12,7 +12,7 @@
 <form:form action="processForm" modelAttribute="student">
 <!-- modelAttribute="student" must match with the addAtttribute() in the controller code -->
 First Name :<form:input path="firstName"/>
-<!-- firstName is the property of Student class -->
+<!-- firstName is the property of Student class. Path to property for data binding -->
 <br><br>
 Last Name :<form:input path="lastName"/>
 <br><br>
