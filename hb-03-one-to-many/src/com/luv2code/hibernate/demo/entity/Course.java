@@ -12,7 +12,7 @@ import javax.persistence.Table;
 // ensure that all imports are from javax.persistence
 
 @Entity
-@Table(name="entity")
+@Table(name="course")
 public class Course {
 // define our fields
 	// define constructors
